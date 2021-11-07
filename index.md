@@ -3,6 +3,7 @@
 # articles:
 #   excerpt_type: html
 layout: article
+title: Project Home
 ---
 
 
@@ -18,5 +19,5 @@ Follow the [Quick Start](/docs/quick-start) to get started with SQLGrader for yo
 
 
 ## Open Source
-SQLGrader is [licensed MIT](https://github.com/robertdroptablestudents/sqlgrader/blob/main/LICENSE) and is free for use and customization.  SQLGrader is also open for [contributions](https://github.com/robertdroptablestudents/sqlgrader/blob/main/contributing).
+SQLGrader is [licensed MIT](https://github.com/robertdroptablestudents/sqlgrader/blob/main/LICENSE) and is free for use and customization.  SQLGrader is also open to [contributors](https://github.com/robertdroptablestudents/sqlgrader/blob/main/contributing).
 
