@@ -17,12 +17,12 @@
 ## => Site Settings
 ##############################
 text_skin: sqlgrader # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+highlight_theme: "tomorrow-night" # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : SQLgrader
+title   : SQLGrader
 description: #> # this means to ignore newlines until "Language & timezone"
-  Resources for SQL in college education
+  Resources for SQL in education
 
 
 ## => Language and Timezone
@@ -35,10 +35,10 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ##############################
 author:
   type      : organization # "person" (default), "organization"
-  name      : SQLgrader
+  name      : SQLGrader
   url       :
   avatar    : # path or url of avatar image (square)
-  bio       : Resources for SQL in college education
+  bio       : Resources for SQL in education
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -74,11 +74,11 @@ paths:
 excerpt_separator: <!--more-->
 
 ## license
-license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+license: CC-BY-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
 
 ## TOC
 toc:
-  selectors: # "h1,h2,h3" (default)
+  selectors: "h1,h2" # "h1,h2,h3" (default)
 
 
 ## => Markdown Enhancements
@@ -214,6 +214,18 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+  - scope:
+      path: "sqlgrader-docs"
+    values:
+      layout: article
+      nav_key: docs
+      sidebar:
+        nav: docs
+      sharing: false
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
 
 
 ## => Plugins
