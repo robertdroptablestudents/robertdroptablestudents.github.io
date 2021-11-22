@@ -13,6 +13,8 @@ docs:
         url: /docs/overview
       - title: Quick Start
         url: /docs/quick-start
+      - title: Options
+        url: /docs/options
       - title: Course Setup
         url: /docs/course-setup
       - title: Grading
