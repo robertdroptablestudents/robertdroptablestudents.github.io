@@ -9,6 +9,8 @@ key: docs-grading
 This section still needs to be written.
 
 
+![SQLGrader Query Results comparison](/assets/diagrams/querycomparison.png)
+
 ## Schema Grading
 All schema comparisons are done in a case-insensitive manner.
 
