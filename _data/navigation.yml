@@ -7,15 +7,21 @@ header:
     url: /docs/quick-start
 
 docs:
-  - title: Docs
+  - title: Deployment
     children:
-      - title: Overview
-        url: /docs/overview
-      - title: Quick Start
-        url: /docs/quick-start
-      - title: Options
-        url: /docs/options
-      - title: Course Setup
-        url: /docs/course-setup
-      - title: Grading
-        url: /docs/grading
+    - title: Quick Start
+      url: /docs/quick-start
+    - title: Options
+      url: /docs/options
+    - title: Architecture
+      url: /docs/architecture
+  - title: User Guide
+    children:
+    - title: Course Setup
+      url: /docs/course-setup
+    - title: Grading
+      url: /docs/grading
+    - title: Data Generation
+      url: /docs/datagen
+    - title: Limitations
+      url: /docs/limitations

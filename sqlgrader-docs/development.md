@@ -44,3 +44,28 @@ docker run -p 80:80 --privileged -d sqlgrader
 ```
 
 For more on the available options to customize the SQLGrader container, see [options](options.md) or the [Dockerfile](https://github.com/robertdroptablestudents/sqlgrader/Dockerfile).
+
+
+## Reset Local Dev Environment
+
+1. Clear all app migrations
+```
+cd webui/instructor/migrations
+rm -r *
+```
+
+2. Delete database - remove db.sqlite3 from webui/sqlite folder
+
+3. Run initial migration and re-add super user
+```
+cd webui
+python manage.py migrate
+DJANGO_SUPERUSER_USERNAME=admin DJANGO_SUPERUSER_PASSWORD=abc123 DJANGO_SUPERUSER_EMAIL=robert@droptablestudents.com python manage.py createsuperuser --noinput
+python manage.py drf_create_token admin
+```
+
+4. Run app migrations
+```
+python manage.py makemigrations instructor
+python manage.py migrate
+```
