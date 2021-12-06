@@ -19,6 +19,8 @@ SQLGrader code is available for continued development and local build/customizat
 The entire project is stored in a single repository, including the Django web UI and the database interaction API. Git clone from [https://github.com/robertdroptablestudents/sqlgrader](https://github.com/robertdroptablestudents/sqlgrader) and use the provided [devcontainer](https://code.visualstudio.com/docs/remote/containers) definition for a pre-configured development environment.
 
 
+**VS Code tasks are setup, hit F5 to start the web UI server.**
+
 
 ## Build Locally
 
@@ -30,10 +32,14 @@ Pressing ⇧⌘B (shift+command/ctrl+B) in VS Code will open a preconfigured bui
 From the root of the project directory on your workstation, run the docker build command from the terminal:
 
 ```bash
-docker build --build-arg BUILDID="mylocalbuild" -t sqlgrader .
+docker build -t sqlgrader .
 ```
-(The build argument for BUILDID is optional)
 
+An optional build arguement for BUILDID allows a custom build number to be injected into the environment during build.  Add `--build-arg BUILDID="specialbuildnumber"` to the docker build command to use:
+
+```bash
+docker build --build-arg BUILDID="specialbuildnumber" -t sqlgrader .
+```
 
 ## Run Locally Built Container
 

@@ -15,16 +15,22 @@ docs:
       url: /docs/options
     - title: Architecture
       url: /docs/architecture
-    - title: Development
-      url: /docs/development
   - title: User Guide
     children:
     - title: Course Setup
       url: /docs/course-setup
+    - title: Assignments
+      url: /docs/assignments
     - title: Grading
       url: /docs/grading
     - title: Data Generation
       url: /docs/datagen
     - title: Limitations
       url: /docs/limitations
+  - title: Developer Guide
+    children:
+    - title: Development
+      url: /docs/development
+    - title: Code Dependencies
+      url: /docs/dependencies
   
