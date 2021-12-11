@@ -30,3 +30,7 @@ The following data types are observed for data generation:
 - date, time, datetime, datetime2, datetimeoffset
 
 Data types not listed may generate a blank column.
+
+### Data Generation Limitations
+- Data generation does not function properly on schemas with "-" in the table or schema names.
+- Certain data types will not generate data, including XML, array
