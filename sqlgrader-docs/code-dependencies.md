@@ -35,3 +35,4 @@ Python modules [installed by pip](https://github.com/robertdroptablestudents/sql
 - httpx
 - djangorestframework
 - docker SDK
+- django-report-builder
