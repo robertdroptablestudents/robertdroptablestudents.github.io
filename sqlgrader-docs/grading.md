@@ -17,19 +17,19 @@ It is expected that columns be in the same order although the column names may d
 
 ## Schema Grading
 
-Any assignment item that is a "schema" type will be graded by comparing the resulting tables, columns, and indexes between the provided schema and a student's schema.  All schema comparisons are done in a case-insensitive manner, however object names, data types, snd whether the column participates in an auto-increment or otherwise unique column must match.
+Any assignment item that is a "schema" type will be graded by comparing the resulting tables, columns, and indexes between the provided schema and a student's schema.  All schema comparisons are done in a case-insensitive manner, however object names, data types, and whether the column participates in an auto-increment or otherwise unique column must match.
 
 
 ```sql
 select stuff from information_schema
 ```
 
-Indexes are compared on type, first column, remaining column order, and included columns.
+The grade for a schema item is stored directly in the `StudentSubmissionItem` object during grading.
 
 
 
 
-Support for grading views is incomplete.
+Support for grading views and indexes is incomplete.
 
 ## Customizing Grading
 This section still needs to be written.
