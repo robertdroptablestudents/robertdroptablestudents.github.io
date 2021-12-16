@@ -26,4 +26,4 @@ SQLGrader is available in open source for contributions, use, and customization.
 
 ## Origin
 
-SQLGrader began as a project by [Drew Skwiers-Koballa](https://www.linkedin.com/in/drew-skwiers-koballa/) for the [Educational Technology course](http://omscs6460.gatech.edu/) at [Georgia Institute of Technology](https://omscs.gatech.edu/). 
+SQLGrader began as a project by [Drew Skwiers-Koballa](https://www.linkedin.com/in/drew-skwiers-koballa/) for the [Educational Technology course](http://omscs6460.gatech.edu/) at [Georgia Institute of Technology](https://omscs.gatech.edu/).  The original project is described in this [paper](assets/papers/DSK-Fall2021.pdf).
